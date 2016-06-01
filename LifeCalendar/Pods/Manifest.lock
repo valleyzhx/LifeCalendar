@@ -1,0 +1,57 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - DateTools (1.7.0)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - Mantle (1.5.7):
+    - Mantle/extobjc (= 1.5.7)
+  - Mantle/extobjc (1.5.7)
+  - Masonry (1.0.0)
+  - MBProgressHUD (0.9.2)
+  - UMengAnalytics (3.6.6)
+  - UMengFeedback (2.3.4)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.6.3)
+  - DateTools
+  - FMDB
+  - Mantle (~> 1.5.6)
+  - Masonry
+  - MBProgressHUD (~> 0.9.1)
+  - UMengAnalytics
+  - UMengFeedback
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  Mantle: 4af47cf9547a4d0ad145a48cd0be3b411a5ae2b8
+  Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  UMengAnalytics: 4bf831415146b9c57cb10be65fbd43462ef8cf65
+  UMengFeedback: 5283cc0e324dffca4dd54c4abb3cbded56487817
+
+PODFILE CHECKSUM: e9a8b286a839308883d8cecc7f441eabbabde489
+
+COCOAPODS: 1.0.0

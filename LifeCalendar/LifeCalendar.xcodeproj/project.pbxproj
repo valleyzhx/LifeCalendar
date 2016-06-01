@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		728F5347698D6A388B9F7A5A /* libPods-LifeCalendar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E88078C950E928BBA0A1D2 /* libPods-LifeCalendar.a */; };
+		F0067DF11CFD92120046B60D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0067DF01CFD92120046B60D /* main.m */; };
+		F0067DF41CFD92130046B60D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0067DF31CFD92120046B60D /* AppDelegate.m */; };
+		F0067DFD1CFD92130046B60D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0067DFB1CFD92130046B60D /* Main.storyboard */; };
+		F0067DFF1CFD92130046B60D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0067DFE1CFD92130046B60D /* Assets.xcassets */; };
+		F0067E021CFD92130046B60D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0067E001CFD92130046B60D /* LaunchScreen.storyboard */; };
+		F0067E111CFD93AC0046B60D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0067E101CFD93AC0046B60D /* BaseViewController.m */; };
+		F0067E171CFD96800046B60D /* LifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0067E161CFD96800046B60D /* LifeViewController.m */; };
+		F0067E1A1CFD968F0046B60D /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0067E191CFD968F0046B60D /* TargetViewController.m */; };
+		F0067E241CFD9B9F0046B60D /* NSDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F0067E231CFD9B9F0046B60D /* NSDateTool.m */; };
+		F0AC7C7F1CFED28100A4593A /* ShowDatePickView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AC7C7E1CFED28100A4593A /* ShowDatePickView.m */; };
+		F0AC7C811CFED6EB00A4593A /* ShowDatePickView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0AC7C801CFED6EB00A4593A /* ShowDatePickView.xib */; };
+		F0AC7C841CFEDAB200A4593A /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AC7C831CFEDAB200A4593A /* UIViewAdditions.m */; };
+		F0AC7C871CFEDEFB00A4593A /* TabController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AC7C861CFEDEFB00A4593A /* TabController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C0DEBC9CA602C73C7B03037 /* Pods-LifeCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeCalendar.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeCalendar/Pods-LifeCalendar.release.xcconfig"; sourceTree = "<group>"; };
+		4EF7EF702F8253069735DD6B /* Pods-LifeCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeCalendar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LifeCalendar/Pods-LifeCalendar.debug.xcconfig"; sourceTree = "<group>"; };
+		85E88078C950E928BBA0A1D2 /* libPods-LifeCalendar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LifeCalendar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0067DEC1CFD92120046B60D /* LifeCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0067DF01CFD92120046B60D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0067DF21CFD92120046B60D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F0067DF31CFD92120046B60D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F0067DFC1CFD92130046B60D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0067DFE1CFD92130046B60D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0067E011CFD92130046B60D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0067E031CFD92130046B60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0067E0F1CFD93AC0046B60D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		F0067E101CFD93AC0046B60D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		F0067E151CFD96800046B60D /* LifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeViewController.h; sourceTree = "<group>"; };
+		F0067E161CFD96800046B60D /* LifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeViewController.m; sourceTree = "<group>"; };
+		F0067E181CFD968F0046B60D /* TargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetViewController.h; sourceTree = "<group>"; };
+		F0067E191CFD968F0046B60D /* TargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetViewController.m; sourceTree = "<group>"; };
+		F0067E221CFD9B9F0046B60D /* NSDateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateTool.h; sourceTree = "<group>"; };
+		F0067E231CFD9B9F0046B60D /* NSDateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateTool.m; sourceTree = "<group>"; };
+		F0067E251CFD9C500046B60D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F0AC7C791CFEC98F00A4593A /* ViewInfoMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewInfoMacro.h; sourceTree = "<group>"; };
+		F0AC7C7D1CFED28100A4593A /* ShowDatePickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowDatePickView.h; sourceTree = "<group>"; };
+		F0AC7C7E1CFED28100A4593A /* ShowDatePickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowDatePickView.m; sourceTree = "<group>"; };
+		F0AC7C801CFED6EB00A4593A /* ShowDatePickView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowDatePickView.xib; sourceTree = "<group>"; };
+		F0AC7C821CFEDAB200A4593A /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
+		F0AC7C831CFEDAB200A4593A /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
+		F0AC7C851CFEDEFB00A4593A /* TabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabController.h; sourceTree = "<group>"; };
+		F0AC7C861CFEDEFB00A4593A /* TabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0067DE91CFD92120046B60D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				728F5347698D6A388B9F7A5A /* libPods-LifeCalendar.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59EC1256DD97CC2C4CD100EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85E88078C950E928BBA0A1D2 /* libPods-LifeCalendar.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E709E248E936891B0480FF72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EF7EF702F8253069735DD6B /* Pods-LifeCalendar.debug.xcconfig */,
+				4C0DEBC9CA602C73C7B03037 /* Pods-LifeCalendar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F0067DE31CFD92120046B60D = {
+			isa = PBXGroup;
+			children = (
+				F0067DEE1CFD92120046B60D /* LifeCalendar */,
+				F0067DED1CFD92120046B60D /* Products */,
+				E709E248E936891B0480FF72 /* Pods */,
+				59EC1256DD97CC2C4CD100EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F0067DED1CFD92120046B60D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0067DEC1CFD92120046B60D /* LifeCalendar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0067DEE1CFD92120046B60D /* LifeCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				F0067E1E1CFD97BA0046B60D /* Tool */,
+				F0067E121CFD940A0046B60D /* Libary */,
+				F0067E091CFD930E0046B60D /* VC */,
+				F0067DF21CFD92120046B60D /* AppDelegate.h */,
+				F0067DF31CFD92120046B60D /* AppDelegate.m */,
+				F0067E0F1CFD93AC0046B60D /* BaseViewController.h */,
+				F0067E101CFD93AC0046B60D /* BaseViewController.m */,
+				F0AC7C851CFEDEFB00A4593A /* TabController.h */,
+				F0AC7C861CFEDEFB00A4593A /* TabController.m */,
+				F0067DFB1CFD92130046B60D /* Main.storyboard */,
+				F0067DFE1CFD92130046B60D /* Assets.xcassets */,
+				F0067E001CFD92130046B60D /* LaunchScreen.storyboard */,
+				F0067E031CFD92130046B60D /* Info.plist */,
+				F0067DEF1CFD92120046B60D /* Supporting Files */,
+			);
+			path = LifeCalendar;
+			sourceTree = "<group>";
+		};
+		F0067DEF1CFD92120046B60D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0067DF01CFD92120046B60D /* main.m */,
+				F0067E251CFD9C500046B60D /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0067E091CFD930E0046B60D /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				F0067E131CFD96640046B60D /* LifeVC */,
+				F0067E141CFD96640046B60D /* TargetVC */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		F0067E121CFD940A0046B60D /* Libary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libary;
+			sourceTree = "<group>";
+		};
+		F0067E131CFD96640046B60D /* LifeVC */ = {
+			isa = PBXGroup;
+			children = (
+				F0067E151CFD96800046B60D /* LifeViewController.h */,
+				F0067E161CFD96800046B60D /* LifeViewController.m */,
+				F0AC7C7D1CFED28100A4593A /* ShowDatePickView.h */,
+				F0AC7C7E1CFED28100A4593A /* ShowDatePickView.m */,
+				F0AC7C801CFED6EB00A4593A /* ShowDatePickView.xib */,
+			);
+			path = LifeVC;
+			sourceTree = "<group>";
+		};
+		F0067E141CFD96640046B60D /* TargetVC */ = {
+			isa = PBXGroup;
+			children = (
+				F0067E181CFD968F0046B60D /* TargetViewController.h */,
+				F0067E191CFD968F0046B60D /* TargetViewController.m */,
+			);
+			path = TargetVC;
+			sourceTree = "<group>";
+		};
+		F0067E1E1CFD97BA0046B60D /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				F0AC7C791CFEC98F00A4593A /* ViewInfoMacro.h */,
+				F0AC7C821CFEDAB200A4593A /* UIViewAdditions.h */,
+				F0AC7C831CFEDAB200A4593A /* UIViewAdditions.m */,
+				F0067E221CFD9B9F0046B60D /* NSDateTool.h */,
+				F0067E231CFD9B9F0046B60D /* NSDateTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0067DEB1CFD92120046B60D /* LifeCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0067E061CFD92130046B60D /* Build configuration list for PBXNativeTarget "LifeCalendar" */;
+			buildPhases = (
+				DA91D127BF220E1D1D99777E /* 📦 Check Pods Manifest.lock */,
+				F0067DE81CFD92120046B60D /* Sources */,
+				F0067DE91CFD92120046B60D /* Frameworks */,
+				F0067DEA1CFD92120046B60D /* Resources */,
+				6777429C1EF79723E835B900 /* 📦 Embed Pods Frameworks */,
+				6C687B18C40C746CC0FFAB52 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifeCalendar;
+			productName = LifeCalendar;
+			productReference = F0067DEC1CFD92120046B60D /* LifeCalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0067DE41CFD92120046B60D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = iDreams;
+				TargetAttributes = {
+					F0067DEB1CFD92120046B60D = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = F0067DE71CFD92120046B60D /* Build configuration list for PBXProject "LifeCalendar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0067DE31CFD92120046B60D;
+			productRefGroup = F0067DED1CFD92120046B60D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0067DEB1CFD92120046B60D /* LifeCalendar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0067DEA1CFD92120046B60D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0067E021CFD92130046B60D /* LaunchScreen.storyboard in Resources */,
+				F0067DFF1CFD92130046B60D /* Assets.xcassets in Resources */,
+				F0AC7C811CFED6EB00A4593A /* ShowDatePickView.xib in Resources */,
+				F0067DFD1CFD92130046B60D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6777429C1EF79723E835B900 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LifeCalendar/Pods-LifeCalendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C687B18C40C746CC0FFAB52 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LifeCalendar/Pods-LifeCalendar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA91D127BF220E1D1D99777E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0067DE81CFD92120046B60D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0AC7C7F1CFED28100A4593A /* ShowDatePickView.m in Sources */,
+				F0AC7C871CFEDEFB00A4593A /* TabController.m in Sources */,
+				F0067E1A1CFD968F0046B60D /* TargetViewController.m in Sources */,
+				F0067E111CFD93AC0046B60D /* BaseViewController.m in Sources */,
+				F0067DF41CFD92130046B60D /* AppDelegate.m in Sources */,
+				F0AC7C841CFEDAB200A4593A /* UIViewAdditions.m in Sources */,
+				F0067E171CFD96800046B60D /* LifeViewController.m in Sources */,
+				F0067E241CFD9B9F0046B60D /* NSDateTool.m in Sources */,
+				F0067DF11CFD92120046B60D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F0067DFB1CFD92130046B60D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0067DFC1CFD92130046B60D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0067E001CFD92130046B60D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0067E011CFD92130046B60D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0067E041CFD92130046B60D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F0067E051CFD92130046B60D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0067E071CFD92130046B60D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF7EF702F8253069735DD6B /* Pods-LifeCalendar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LifeCalendar/PrefixHeader.pch";
+				INFOPLIST_FILE = LifeCalendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = idreams.club.LifeCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F0067E081CFD92130046B60D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C0DEBC9CA602C73C7B03037 /* Pods-LifeCalendar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LifeCalendar/PrefixHeader.pch";
+				INFOPLIST_FILE = LifeCalendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = idreams.club.LifeCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0067DE71CFD92120046B60D /* Build configuration list for PBXProject "LifeCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0067E041CFD92130046B60D /* Debug */,
+				F0067E051CFD92130046B60D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0067E061CFD92130046B60D /* Build configuration list for PBXNativeTarget "LifeCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0067E071CFD92130046B60D /* Debug */,
+				F0067E081CFD92130046B60D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0067DE41CFD92120046B60D /* Project object */;
+}
