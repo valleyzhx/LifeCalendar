@@ -11,7 +11,7 @@
 @interface ShowDatePickView : UIView
 
 
-+(id)viewWithFinishBlock:(void(^)(NSData* date))complishBlock;
++(id)viewWithFinishBlock:(void(^)(NSDate* date))complishBlock;
 
 
 -(void)showInView:(UIView*)view;

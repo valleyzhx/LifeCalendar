@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.frame = CGRectMake(0,0,SCREEN_WIDTH,SCREEN_HEIGHT-HeightTabView);
 
 }
 

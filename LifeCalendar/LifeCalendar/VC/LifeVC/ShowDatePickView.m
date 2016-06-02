@@ -12,7 +12,7 @@
 @interface ShowDatePickView ()
 
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
-@property (copy, nonatomic) void (^myblock)(NSData* date);
+@property (copy, nonatomic) void (^myblock)(NSDate* date);
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @end
 
@@ -21,7 +21,7 @@
 
 }
 
-+(id)viewWithFinishBlock:(void (^)(NSData *))complishBlock{
++(id)viewWithFinishBlock:(void (^)(NSDate *))complishBlock{
     ShowDatePickView *view = [[[NSBundle mainBundle]loadNibNamed:@"ShowDatePickView" owner:self options:nil]firstObject];
     view.myblock = complishBlock;
     view.datePicker.datePickerMode = UIDatePickerModeDate;
@@ -34,13 +34,13 @@
     self.frame = view.bounds;
     [view addSubview:self];
     _contentView.top = self.height;
-    [UIView animateWithDuration:1 animations:^{
-        _contentView.bottom = 0;
+    [UIView animateWithDuration:0.3 animations:^{
+        _contentView.bottom = self.height;
     }];
 }
 
 -(void)dismiss{
-    [UIView animateWithDuration:1 animations:^{
+    [UIView animateWithDuration:0.3 animations:^{
         _contentView.top = self.height;
     } completion:^(BOOL finished) {
         [self removeFromSuperview];
@@ -51,4 +51,19 @@
 - (IBAction)backgroundClicked:(id)sender {
     [self dismiss];
 }
+
+- (IBAction)cancleAction:(id)sender {
+    [self dismiss];
+
+}
+- (IBAction)doneAction:(id)sender {
+    [self dismiss];
+    if (_myblock) {
+        _myblock(_datePicker.date);
+    }
+
+}
+
+
+
 @end

@@ -13,7 +13,7 @@
             <subviews>
                 <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kKG-ld-KRf">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <action selector="backgroundClicked:" destination="sPx-7r-jfG" eventType="touchUpInside" id="Pnh-0R-S7l"/>
@@ -21,7 +21,7 @@
                 </button>
                 <view contentMode="scaleToFill" id="0ty-qw-qd2">
                     <rect key="frame" x="0.0" y="356" width="320" height="212"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AiT-Rh-sBd">
                             <rect key="frame" x="8" y="12" width="30" height="30"/>
@@ -29,6 +29,9 @@
                             <state key="normal" title="取消">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="cancleAction:" destination="sPx-7r-jfG" eventType="touchUpInside" id="F51-nu-gDj"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dq7-CF-a2K">
                             <rect key="frame" x="282" y="12" width="30" height="30"/>
@@ -36,6 +39,9 @@
                             <state key="normal" title="完成">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="doneAction:" destination="sPx-7r-jfG" eventType="touchUpInside" id="iEu-vX-zCR"/>
+                            </connections>
                         </button>
                         <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="7cK-Fr-S8f">
                             <rect key="frame" x="0.0" y="50" width="320" height="162"/>

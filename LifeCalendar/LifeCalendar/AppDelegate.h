@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserSetting.h"
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
 
 @end
 

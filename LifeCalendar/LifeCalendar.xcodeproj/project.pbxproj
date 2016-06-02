@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		728F5347698D6A388B9F7A5A /* libPods-LifeCalendar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E88078C950E928BBA0A1D2 /* libPods-LifeCalendar.a */; };
+		F00108531D00013300CFE1DD /* DMModel+FMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = F00108521D00013300CFE1DD /* DMModel+FMDB.m */; };
 		F0067DF11CFD92120046B60D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0067DF01CFD92120046B60D /* main.m */; };
 		F0067DF41CFD92130046B60D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0067DF31CFD92120046B60D /* AppDelegate.m */; };
 		F0067DFD1CFD92130046B60D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0067DFB1CFD92130046B60D /* Main.storyboard */; };
@@ -16,17 +17,25 @@
 		F0067E111CFD93AC0046B60D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0067E101CFD93AC0046B60D /* BaseViewController.m */; };
 		F0067E171CFD96800046B60D /* LifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0067E161CFD96800046B60D /* LifeViewController.m */; };
 		F0067E1A1CFD968F0046B60D /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0067E191CFD968F0046B60D /* TargetViewController.m */; };
-		F0067E241CFD9B9F0046B60D /* NSDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F0067E231CFD9B9F0046B60D /* NSDateTool.m */; };
+		F0652B2C1CFFD687004FC47F /* LifeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0652B2B1CFFD687004FC47F /* LifeView.m */; };
+		F0652B321CFFD9DF004FC47F /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0652B311CFFD9DF004FC47F /* FMDBManager.m */; };
+		F0652B361CFFDB93004FC47F /* DMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0652B351CFFDB93004FC47F /* DMModel.m */; };
+		F0652B391CFFFCEF004FC47F /* UserSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = F0652B381CFFFCEF004FC47F /* UserSetting.m */; };
 		F0AC7C7F1CFED28100A4593A /* ShowDatePickView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AC7C7E1CFED28100A4593A /* ShowDatePickView.m */; };
 		F0AC7C811CFED6EB00A4593A /* ShowDatePickView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0AC7C801CFED6EB00A4593A /* ShowDatePickView.xib */; };
 		F0AC7C841CFEDAB200A4593A /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AC7C831CFEDAB200A4593A /* UIViewAdditions.m */; };
 		F0AC7C871CFEDEFB00A4593A /* TabController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AC7C861CFEDEFB00A4593A /* TabController.m */; };
+		F0CAE63F1D003733009D60A3 /* LifeYearView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CAE63E1D003733009D60A3 /* LifeYearView.m */; };
+		F0CAE6421D003C60009D60A3 /* DMColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CAE6411D003C60009D60A3 /* DMColorManager.m */; };
+		F0CAE6481D00414C009D60A3 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CAE6451D00414C009D60A3 /* PopoverView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C0DEBC9CA602C73C7B03037 /* Pods-LifeCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeCalendar.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeCalendar/Pods-LifeCalendar.release.xcconfig"; sourceTree = "<group>"; };
 		4EF7EF702F8253069735DD6B /* Pods-LifeCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeCalendar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LifeCalendar/Pods-LifeCalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		85E88078C950E928BBA0A1D2 /* libPods-LifeCalendar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LifeCalendar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00108511D00013300CFE1DD /* DMModel+FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DMModel+FMDB.h"; sourceTree = "<group>"; };
+		F00108521D00013300CFE1DD /* DMModel+FMDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DMModel+FMDB.m"; sourceTree = "<group>"; };
 		F0067DEC1CFD92120046B60D /* LifeCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0067DF01CFD92120046B60D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0067DF21CFD92120046B60D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,9 +50,15 @@
 		F0067E161CFD96800046B60D /* LifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeViewController.m; sourceTree = "<group>"; };
 		F0067E181CFD968F0046B60D /* TargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetViewController.h; sourceTree = "<group>"; };
 		F0067E191CFD968F0046B60D /* TargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetViewController.m; sourceTree = "<group>"; };
-		F0067E221CFD9B9F0046B60D /* NSDateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateTool.h; sourceTree = "<group>"; };
-		F0067E231CFD9B9F0046B60D /* NSDateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateTool.m; sourceTree = "<group>"; };
 		F0067E251CFD9C500046B60D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F0652B2A1CFFD687004FC47F /* LifeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeView.h; sourceTree = "<group>"; };
+		F0652B2B1CFFD687004FC47F /* LifeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeView.m; sourceTree = "<group>"; };
+		F0652B301CFFD9DF004FC47F /* FMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
+		F0652B311CFFD9DF004FC47F /* FMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
+		F0652B341CFFDB93004FC47F /* DMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMModel.h; sourceTree = "<group>"; };
+		F0652B351CFFDB93004FC47F /* DMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMModel.m; sourceTree = "<group>"; };
+		F0652B371CFFFCEF004FC47F /* UserSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSetting.h; sourceTree = "<group>"; };
+		F0652B381CFFFCEF004FC47F /* UserSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSetting.m; sourceTree = "<group>"; };
 		F0AC7C791CFEC98F00A4593A /* ViewInfoMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewInfoMacro.h; sourceTree = "<group>"; };
 		F0AC7C7D1CFED28100A4593A /* ShowDatePickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowDatePickView.h; sourceTree = "<group>"; };
 		F0AC7C7E1CFED28100A4593A /* ShowDatePickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowDatePickView.m; sourceTree = "<group>"; };
@@ -52,6 +67,14 @@
 		F0AC7C831CFEDAB200A4593A /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
 		F0AC7C851CFEDEFB00A4593A /* TabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabController.h; sourceTree = "<group>"; };
 		F0AC7C861CFEDEFB00A4593A /* TabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabController.m; sourceTree = "<group>"; };
+		F0CAE63D1D003733009D60A3 /* LifeYearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeYearView.h; sourceTree = "<group>"; };
+		F0CAE63E1D003733009D60A3 /* LifeYearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeYearView.m; sourceTree = "<group>"; };
+		F0CAE6401D003C60009D60A3 /* DMColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMColorManager.h; sourceTree = "<group>"; };
+		F0CAE6411D003C60009D60A3 /* DMColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMColorManager.m; sourceTree = "<group>"; };
+		F0CAE6441D00414C009D60A3 /* PopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView.h; sourceTree = "<group>"; };
+		F0CAE6451D00414C009D60A3 /* PopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverView.m; sourceTree = "<group>"; };
+		F0CAE6461D00414C009D60A3 /* PopoverView_Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView_Configuration.h; sourceTree = "<group>"; };
+		F0CAE6471D00414C009D60A3 /* PopoverViewCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverViewCompatibility.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +127,7 @@
 		F0067DEE1CFD92120046B60D /* LifeCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				F0652B331CFFDB5D004FC47F /* Model */,
 				F0067E1E1CFD97BA0046B60D /* Tool */,
 				F0067E121CFD940A0046B60D /* Libary */,
 				F0067E091CFD930E0046B60D /* VC */,
@@ -155,6 +179,10 @@
 				F0AC7C7D1CFED28100A4593A /* ShowDatePickView.h */,
 				F0AC7C7E1CFED28100A4593A /* ShowDatePickView.m */,
 				F0AC7C801CFED6EB00A4593A /* ShowDatePickView.xib */,
+				F0652B2A1CFFD687004FC47F /* LifeView.h */,
+				F0652B2B1CFFD687004FC47F /* LifeView.m */,
+				F0CAE63D1D003733009D60A3 /* LifeYearView.h */,
+				F0CAE63E1D003733009D60A3 /* LifeYearView.m */,
 			);
 			path = LifeVC;
 			sourceTree = "<group>";
@@ -171,13 +199,40 @@
 		F0067E1E1CFD97BA0046B60D /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				F0CAE6431D00414C009D60A3 /* PopoverView */,
 				F0AC7C791CFEC98F00A4593A /* ViewInfoMacro.h */,
 				F0AC7C821CFEDAB200A4593A /* UIViewAdditions.h */,
 				F0AC7C831CFEDAB200A4593A /* UIViewAdditions.m */,
-				F0067E221CFD9B9F0046B60D /* NSDateTool.h */,
-				F0067E231CFD9B9F0046B60D /* NSDateTool.m */,
+				F0652B301CFFD9DF004FC47F /* FMDBManager.h */,
+				F0652B311CFFD9DF004FC47F /* FMDBManager.m */,
+				F00108511D00013300CFE1DD /* DMModel+FMDB.h */,
+				F00108521D00013300CFE1DD /* DMModel+FMDB.m */,
+				F0CAE6401D003C60009D60A3 /* DMColorManager.h */,
+				F0CAE6411D003C60009D60A3 /* DMColorManager.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		F0652B331CFFDB5D004FC47F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0652B341CFFDB93004FC47F /* DMModel.h */,
+				F0652B351CFFDB93004FC47F /* DMModel.m */,
+				F0652B371CFFFCEF004FC47F /* UserSetting.h */,
+				F0652B381CFFFCEF004FC47F /* UserSetting.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0CAE6431D00414C009D60A3 /* PopoverView */ = {
+			isa = PBXGroup;
+			children = (
+				F0CAE6441D00414C009D60A3 /* PopoverView.h */,
+				F0CAE6451D00414C009D60A3 /* PopoverView.m */,
+				F0CAE6461D00414C009D60A3 /* PopoverView_Configuration.h */,
+				F0CAE6471D00414C009D60A3 /* PopoverViewCompatibility.h */,
+			);
+			path = PopoverView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,13 +358,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0AC7C7F1CFED28100A4593A /* ShowDatePickView.m in Sources */,
+				F0CAE6421D003C60009D60A3 /* DMColorManager.m in Sources */,
+				F0CAE63F1D003733009D60A3 /* LifeYearView.m in Sources */,
 				F0AC7C871CFEDEFB00A4593A /* TabController.m in Sources */,
 				F0067E1A1CFD968F0046B60D /* TargetViewController.m in Sources */,
+				F0652B361CFFDB93004FC47F /* DMModel.m in Sources */,
 				F0067E111CFD93AC0046B60D /* BaseViewController.m in Sources */,
+				F0652B391CFFFCEF004FC47F /* UserSetting.m in Sources */,
+				F0652B2C1CFFD687004FC47F /* LifeView.m in Sources */,
+				F00108531D00013300CFE1DD /* DMModel+FMDB.m in Sources */,
 				F0067DF41CFD92130046B60D /* AppDelegate.m in Sources */,
 				F0AC7C841CFEDAB200A4593A /* UIViewAdditions.m in Sources */,
+				F0652B321CFFD9DF004FC47F /* FMDBManager.m in Sources */,
 				F0067E171CFD96800046B60D /* LifeViewController.m in Sources */,
-				F0067E241CFD9B9F0046B60D /* NSDateTool.m in Sources */,
+				F0CAE6481D00414C009D60A3 /* PopoverView.m in Sources */,
 				F0067DF11CFD92120046B60D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

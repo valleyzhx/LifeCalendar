@@ -8,62 +8,70 @@
 
 #import "LifeViewController.h"
 #import "ShowDatePickView.h"
+#import "UserSetting.h"
+#import "LifeView.h"
 
 @interface LifeViewController () <UIScrollViewDelegate>
+@property (nonatomic,strong) UserSetting *userSetting;
 
 @end
 
 @implementation LifeViewController{
     UIButton *_addBirthBtn;
-    UIScrollView *_scrollView;
+    LifeView *_lifeView;
+    UserSetting *_userSetting;
 }
 
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    
-    
-    [self initUI];
+    _userSetting = [UserSetting sharedUserSetting];
+    [self reloadUI];
 }
 
--(void)initUI{
-    NSDate *birth = [NSDateTool getBirthDay];
-    if (birth) {
+
+
+-(void)reloadUI{
+    if (_userSetting.birthDay) {
         [self loadLifeUI];
     }else{
         [self loadSetBirthdayUI];
     }
-    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
 }
 
 
 -(void)loadSetBirthdayUI{
     if (_addBirthBtn == nil) {
         _addBirthBtn = [[UIButton alloc]init];
-        _addBirthBtn.backgroundColor = [UIColor blueColor];
+        _addBirthBtn.backgroundColor = Nav_Color;
         _addBirthBtn.layer.cornerRadius = 5;
         [_addBirthBtn addTarget:self action:@selector(clickAddBirthBtn:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:_addBirthBtn];
         [_addBirthBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(10);
-            make.right.bottom.mas_equalTo(-10);
-            make.height.mas_equalTo(40);
+            make.right.mas_equalTo(-10);
+            make.centerY.equalTo(self.view);
+            make.height.mas_equalTo(60);
         }];
     }
     
-    [self animatedShowView:_addBirthBtn hidenView:_scrollView];
+    [self animatedShowView:_addBirthBtn hidenView:_lifeView];
 }
 
 -(void)loadLifeUI{
-    if (!_scrollView) {
-        _scrollView = [[UIScrollView alloc]init];
-        _scrollView.delegate = self;
-        [self.view addSubview:_scrollView];
-        [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+    if (!_lifeView) {
+        _lifeView = [LifeView lifeView];
+        [self.view addSubview:_lifeView];
+        [_lifeView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(self.view);
         }];
     }
-    [self animatedShowView:_scrollView hidenView:_addBirthBtn];
+    [_lifeView reloadView];
+    [self animatedShowView:_lifeView hidenView:_addBirthBtn];
 
 }
 
@@ -81,8 +89,10 @@
 #pragma makr- action
 
 -(void)clickAddBirthBtn:(UIButton*)btn{
-    ShowDatePickView *picker = [ShowDatePickView viewWithFinishBlock:^(NSData *date) {
-        
+    ShowDatePickView *picker = [ShowDatePickView viewWithFinishBlock:^(NSDate *date) {
+        _userSetting.birthDay = [date timeIntervalSince1970];
+        [self reloadUI];
+        [[FMDBManager shareManager]saveDataWithModel:_userSetting];
     }];
     [picker showInView:KeyWindow];
 }
