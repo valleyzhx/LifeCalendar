@@ -29,6 +29,7 @@ PODS:
   - Mantle/extobjc (1.5.7)
   - Masonry (1.0.0)
   - MBProgressHUD (0.9.2)
+  - PDTSimpleCalendar (0.9.1)
   - UMengAnalytics (3.6.6)
   - UMengFeedback (2.3.4)
 
@@ -39,6 +40,7 @@ DEPENDENCIES:
   - Mantle (~> 1.5.6)
   - Masonry
   - MBProgressHUD (~> 0.9.1)
+  - PDTSimpleCalendar (~> 0.9.1)
   - UMengAnalytics
   - UMengFeedback
 
@@ -49,9 +51,10 @@ SPEC CHECKSUMS:
   Mantle: 4af47cf9547a4d0ad145a48cd0be3b411a5ae2b8
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  PDTSimpleCalendar: d1c03387678422715dc021aa1a85d70f4d1014f2
   UMengAnalytics: 4bf831415146b9c57cb10be65fbd43462ef8cf65
   UMengFeedback: 5283cc0e324dffca4dd54c4abb3cbded56487817
 
-PODFILE CHECKSUM: e9a8b286a839308883d8cecc7f441eabbabde489
+PODFILE CHECKSUM: 78f0e8dcd4f1e8b1028e84efee69d1b95bec8e0f
 
 COCOAPODS: 1.0.0

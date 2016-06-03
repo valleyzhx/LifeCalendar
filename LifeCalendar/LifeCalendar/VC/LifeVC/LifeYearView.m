@@ -9,36 +9,26 @@
 #import "LifeYearView.h"
 #import "UserSetting.h"
 
-#define kBtnWid 50
+#define kBtnWid 40
 
 @implementation LifeYearView{
     NSInteger _year;
-    UIView *_contentView;
-    CGRect _orignFrame;
+    id<LifeYearViewDelegate> _delegate;
 }
 
 
--(id)initWithYear:(NSInteger)year{
-    if (self = [super init]) {
+-(id)initWithYear:(NSInteger)year delegate:(id<LifeYearViewDelegate>)delegate{
+    if (self = [self initWithFrame:CGRectMake(0, 0, kBtnWid*4, kBtnWid*3)]) {
         _year = year;
-        UIButton *btn = [[UIButton alloc]init];
-        [btn addTarget:self action:@selector(closeAction:) forControlEvents:UIControlEventTouchUpInside];
-        _orignFrame = CGRectMake(0, 0, kBtnWid*4, kBtnWid*3);
-        _contentView = [[UIView alloc]initWithFrame:_orignFrame];
-        _contentView.backgroundColor = [UIColor whiteColor];
-        [self addSubview:btn];
-        [self addSubview:_contentView];
-        [btn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(self);
-        }];
         [self initBtnsUI];
+        _delegate = delegate;
     }
     return self;
 }
 
 
 -(void)initBtnsUI{
-    
+    NSInteger nowYear = [[NSDate date]year];
     int month = 1;
     for (int j=0; j<3; j++) {
         for (int i=0; i<4; i++) {
@@ -48,34 +38,24 @@
             [btn setTitle:[NSString stringWithFormat:@"%d",month] forState:UIControlStateNormal];
             btn.transform = CGAffineTransformMakeScale(0.9, 0.9);
             btn.backgroundColor = [DMColorManager colorWithYear:_year];
-            [_contentView addSubview:btn];
+            if (_year == nowYear) {
+                btn.backgroundColor = [DMColorManager colorWithMonth:month];
+            }
+            btn.tag = month;
+            [self addSubview:btn];
             month++;
         }
     }
-}
-
--(void)showInView:(UIView*)view fromFram:(CGRect)rect{
-    self.frame = view.bounds;
-    [view addSubview:self];
-    _contentView.frame = rect;
-    _contentView.alpha = 0;
-    [UIView animateWithDuration:0.3 animations:^{
-        _contentView.frame = _orignFrame;
-        _contentView.center = CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect));
-        _contentView.alpha = 1;
-    }];
 }
 
 
 #pragma mark- Actions
 
 -(void)selectTheMonthAction:(UIButton*)btn{
-    
+    if (_delegate && [_delegate respondsToSelector:@selector(clickedMonth:year:)]) {
+        [_delegate clickedMonth:btn.tag year:_year];
+    }
 }
 
-
--(void)closeAction:(UIButton*)btn{
-    
-}
 
 @end

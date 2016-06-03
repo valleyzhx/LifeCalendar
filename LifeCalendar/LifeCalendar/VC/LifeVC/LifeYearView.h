@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol LifeYearViewDelegate <NSObject>
+
+-(void)clickedMonth:(NSInteger)month year:(NSInteger)year;
+
+@end
+
+
 @interface LifeYearView : UIView
 
--(id)initWithYear:(NSInteger)year;
+-(id)initWithYear:(NSInteger)year delegate:(id<LifeYearViewDelegate>)delegate;
 
 
 @end

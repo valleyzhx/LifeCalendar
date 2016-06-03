@@ -11,6 +11,6 @@ pod 'UMengAnalytics'
 pod 'UMengFeedback'
 pod 'Masonry'
 pod 'DateTools'
-
+pod 'PDTSimpleCalendar', '~> 0.9.1'
 
 end

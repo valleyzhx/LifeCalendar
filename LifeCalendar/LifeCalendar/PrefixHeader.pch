@@ -19,6 +19,10 @@
 #import "AppDelegate.h"
 #import "DMModel+FMDB.h"
 #import "DMColorManager.h"
+#import "PopoverView.h"
+#import "DMShowContentView.h"
+#import "MBProgressHUD.h"
 
+#import <PDTSimpleCalendar/PDTSimpleCalendar.h>
 
 #endif /* PrefixHeader_pch */

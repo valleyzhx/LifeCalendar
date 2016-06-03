@@ -10,4 +10,13 @@
 
 @implementation TargetViewController
 
+-(void)viewDidLoad{
+    self.showTable = YES;
+    [super viewDidLoad];
+    
+}
+
+
+
+
 @end

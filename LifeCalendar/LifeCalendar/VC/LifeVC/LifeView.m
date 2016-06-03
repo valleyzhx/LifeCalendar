@@ -13,12 +13,14 @@
 #define kColumn 8
 #define kBtnWid (SCREEN_WIDTH/kColumn)
 
-@interface LifeView () <UIScrollViewDelegate>
+@interface LifeView () <UIScrollViewDelegate,PopoverViewDelegate,LifeYearViewDelegate,PDTSimpleCalendarViewDelegate>
 
 @end
 
 @implementation LifeView{
     UIScrollView *_scrollView;
+    PopoverView *_popView;
+    PDTSimpleCalendarViewController *_dateRangeCalendarViewController;
 }
 
 +(id)lifeView{
@@ -92,11 +94,62 @@
 #pragma mark- action
 
 -(void)clickedNowYearBtn:(UIButton*)btn{
-   LifeYearView *view = [[LifeYearView alloc]initWithYear:btn.tag];
-    [view showInView:self fromFram:btn.frame];
+   LifeYearView *view = [[LifeYearView alloc]initWithYear:btn.tag delegate:self];
+    
+    CGPoint point = [self convertPoint:btn.center fromView:_scrollView];
+    NSString *title = [[btn titleForState:UIControlStateNormal]stringByAppendingString:@"年"];
+    _popView = [PopoverView showPopoverAtPoint:point inView:self withTitle:title withContentView:view delegate:self];
+    
 }
 
 
+#pragma mark- PopoverViewDelegate
 
+- (void)popoverView:(PopoverView *)popoverView didSelectItemAtIndex:(NSInteger)index{
+    
+}
+
+#pragma mark- LifeYearViewDelegate
+
+-(void)clickedMonth:(NSInteger)month year:(NSInteger)year{
+    [_popView dismiss];
+    
+    _dateRangeCalendarViewController = [[PDTSimpleCalendarViewController alloc] init];
+    _dateRangeCalendarViewController.backgroundColor = viewBGColor;
+    NSDate *date = [NSDate dateWithYear:year month:month day:1];
+    _dateRangeCalendarViewController.firstDate = date;
+    
+    _dateRangeCalendarViewController.lastDate = [date dateByAddingDays:[date daysInMonth]-1];
+    
+    _dateRangeCalendarViewController.view.frame = CGRectMake(0, 0, SCREEN_WIDTH, 350);
+    _dateRangeCalendarViewController.delegate = self;
+    UIColor *color = [DMColorManager colorWithYear:year];
+    NSDate *today = [NSDate date];
+    if (today.year == year) {
+        color = [DMColorManager colorWithMonth:month];
+//        if (today.month == month) {
+//            color = [DMColorManager colorWithDay:]
+//        }
+    }
+    [[PDTSimpleCalendarViewCell appearance] setCircleDefaultColor:viewBGColor];
+    [[PDTSimpleCalendarViewCell appearance] setCircleTodayColor:[UIColor clearColor]];
+    [[PDTSimpleCalendarViewCell appearance] setCircleSelectedColor:JDRedColor];
+    
+    DMShowContentView *showView = [[DMShowContentView alloc]initWithContentView:_dateRangeCalendarViewController.view];
+    [showView showInView:self];
+    
+}
+
+
+#pragma mark- PDTSimpleCalendarViewDelegate
+- (void)simpleCalendarViewController:(PDTSimpleCalendarViewController *)controller didSelectDate:(NSDate *)date{
+    
+}
+- (BOOL)simpleCalendarViewController:(PDTSimpleCalendarViewController *)controller shouldUseCustomColorsForDate:(NSDate *)date{
+    return YES;
+}
+- (UIColor *)simpleCalendarViewController:(PDTSimpleCalendarViewController *)controller textColorForDate:(NSDate *)date{
+    return [DMColorManager colorForDate:date];
+}
 
 @end

@@ -17,6 +17,9 @@
 		F0067E111CFD93AC0046B60D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0067E101CFD93AC0046B60D /* BaseViewController.m */; };
 		F0067E171CFD96800046B60D /* LifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0067E161CFD96800046B60D /* LifeViewController.m */; };
 		F0067E1A1CFD968F0046B60D /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0067E191CFD968F0046B60D /* TargetViewController.m */; };
+		F02B97DD1D0162C600D550FC /* DMTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = F02B97DC1D0162C600D550FC /* DMTarget.m */; };
+		F02B97E01D016A4200D550FC /* MBProgressHUD+string.m in Sources */ = {isa = PBXBuildFile; fileRef = F02B97DF1D016A4200D550FC /* MBProgressHUD+string.m */; };
+		F0364ABF1D0150B4000D98E1 /* DMShowContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0364ABE1D0150B4000D98E1 /* DMShowContentView.m */; };
 		F0652B2C1CFFD687004FC47F /* LifeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0652B2B1CFFD687004FC47F /* LifeView.m */; };
 		F0652B321CFFD9DF004FC47F /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0652B311CFFD9DF004FC47F /* FMDBManager.m */; };
 		F0652B361CFFDB93004FC47F /* DMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0652B351CFFDB93004FC47F /* DMModel.m */; };
@@ -51,6 +54,12 @@
 		F0067E181CFD968F0046B60D /* TargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetViewController.h; sourceTree = "<group>"; };
 		F0067E191CFD968F0046B60D /* TargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetViewController.m; sourceTree = "<group>"; };
 		F0067E251CFD9C500046B60D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F02B97DB1D0162C600D550FC /* DMTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTarget.h; sourceTree = "<group>"; };
+		F02B97DC1D0162C600D550FC /* DMTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMTarget.m; sourceTree = "<group>"; };
+		F02B97DE1D016A4200D550FC /* MBProgressHUD+string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+string.h"; sourceTree = "<group>"; };
+		F02B97DF1D016A4200D550FC /* MBProgressHUD+string.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+string.m"; sourceTree = "<group>"; };
+		F0364ABD1D0150B4000D98E1 /* DMShowContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMShowContentView.h; sourceTree = "<group>"; };
+		F0364ABE1D0150B4000D98E1 /* DMShowContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMShowContentView.m; sourceTree = "<group>"; };
 		F0652B2A1CFFD687004FC47F /* LifeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeView.h; sourceTree = "<group>"; };
 		F0652B2B1CFFD687004FC47F /* LifeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeView.m; sourceTree = "<group>"; };
 		F0652B301CFFD9DF004FC47F /* FMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
@@ -209,6 +218,10 @@
 				F00108521D00013300CFE1DD /* DMModel+FMDB.m */,
 				F0CAE6401D003C60009D60A3 /* DMColorManager.h */,
 				F0CAE6411D003C60009D60A3 /* DMColorManager.m */,
+				F0364ABD1D0150B4000D98E1 /* DMShowContentView.h */,
+				F0364ABE1D0150B4000D98E1 /* DMShowContentView.m */,
+				F02B97DE1D016A4200D550FC /* MBProgressHUD+string.h */,
+				F02B97DF1D016A4200D550FC /* MBProgressHUD+string.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -220,6 +233,8 @@
 				F0652B351CFFDB93004FC47F /* DMModel.m */,
 				F0652B371CFFFCEF004FC47F /* UserSetting.h */,
 				F0652B381CFFFCEF004FC47F /* UserSetting.m */,
+				F02B97DB1D0162C600D550FC /* DMTarget.h */,
+				F02B97DC1D0162C600D550FC /* DMTarget.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -363,13 +378,16 @@
 				F0AC7C871CFEDEFB00A4593A /* TabController.m in Sources */,
 				F0067E1A1CFD968F0046B60D /* TargetViewController.m in Sources */,
 				F0652B361CFFDB93004FC47F /* DMModel.m in Sources */,
+				F02B97E01D016A4200D550FC /* MBProgressHUD+string.m in Sources */,
 				F0067E111CFD93AC0046B60D /* BaseViewController.m in Sources */,
 				F0652B391CFFFCEF004FC47F /* UserSetting.m in Sources */,
 				F0652B2C1CFFD687004FC47F /* LifeView.m in Sources */,
+				F02B97DD1D0162C600D550FC /* DMTarget.m in Sources */,
 				F00108531D00013300CFE1DD /* DMModel+FMDB.m in Sources */,
 				F0067DF41CFD92130046B60D /* AppDelegate.m in Sources */,
 				F0AC7C841CFEDAB200A4593A /* UIViewAdditions.m in Sources */,
 				F0652B321CFFD9DF004FC47F /* FMDBManager.m in Sources */,
+				F0364ABF1D0150B4000D98E1 /* DMShowContentView.m in Sources */,
 				F0067E171CFD96800046B60D /* LifeViewController.m in Sources */,
 				F0CAE6481D00414C009D60A3 /* PopoverView.m in Sources */,
 				F0067DF11CFD92120046B60D /* main.m in Sources */,
