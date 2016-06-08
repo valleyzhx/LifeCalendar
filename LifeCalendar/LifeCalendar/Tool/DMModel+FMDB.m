@@ -21,7 +21,14 @@
 }
 
 +(NSArray*)getModelArrayFromDB{
-    NSString *sql = [NSString stringWithFormat:@"Select * From (%@)",NSStringFromClass([self class])];
+    return [self getModelArrayFromDBWithCondition:nil];
+}
+
++(NSArray *)getModelArrayFromDBWithCondition:(NSString *)condition{
+    NSString *sql = [NSString stringWithFormat:@"Select * From (%@) ",NSStringFromClass([self class])];
+    if (condition) {
+        sql = [sql stringByAppendingString:condition];
+    }
     return [[FMDBManager shareManager]queryTable:[self class] QueryString:sql];
 }
 

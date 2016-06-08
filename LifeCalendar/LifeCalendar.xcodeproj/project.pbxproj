@@ -17,6 +17,12 @@
 		F0067E111CFD93AC0046B60D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0067E101CFD93AC0046B60D /* BaseViewController.m */; };
 		F0067E171CFD96800046B60D /* LifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0067E161CFD96800046B60D /* LifeViewController.m */; };
 		F0067E1A1CFD968F0046B60D /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0067E191CFD968F0046B60D /* TargetViewController.m */; };
+		F01D347F1D07B63E00B49E5B /* NSDate+Dream.m in Sources */ = {isa = PBXBuildFile; fileRef = F01D347E1D07B63E00B49E5B /* NSDate+Dream.m */; };
+		F01D34821D07BCF600B49E5B /* TargetViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F01D34811D07BCF600B49E5B /* TargetViewCell.m */; };
+		F01D34841D07BD0A00B49E5B /* TargetViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F01D34831D07BD0A00B49E5B /* TargetViewCell.xib */; };
+		F01D348D1D07F1B700B49E5B /* TargetAddController.m in Sources */ = {isa = PBXBuildFile; fileRef = F01D348B1D07F1B700B49E5B /* TargetAddController.m */; };
+		F01D34931D07F44500B49E5B /* JDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F01D34901D07F44500B49E5B /* JDTextField.m */; };
+		F01D34941D07F44500B49E5B /* JDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F01D34921D07F44500B49E5B /* JDTextView.m */; };
 		F02B97DD1D0162C600D550FC /* DMTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = F02B97DC1D0162C600D550FC /* DMTarget.m */; };
 		F02B97E01D016A4200D550FC /* MBProgressHUD+string.m in Sources */ = {isa = PBXBuildFile; fileRef = F02B97DF1D016A4200D550FC /* MBProgressHUD+string.m */; };
 		F0364ABF1D0150B4000D98E1 /* DMShowContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0364ABE1D0150B4000D98E1 /* DMShowContentView.m */; };
@@ -54,6 +60,17 @@
 		F0067E181CFD968F0046B60D /* TargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetViewController.h; sourceTree = "<group>"; };
 		F0067E191CFD968F0046B60D /* TargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetViewController.m; sourceTree = "<group>"; };
 		F0067E251CFD9C500046B60D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F01D347D1D07B63E00B49E5B /* NSDate+Dream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Dream.h"; sourceTree = "<group>"; };
+		F01D347E1D07B63E00B49E5B /* NSDate+Dream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Dream.m"; sourceTree = "<group>"; };
+		F01D34801D07BCF600B49E5B /* TargetViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetViewCell.h; sourceTree = "<group>"; };
+		F01D34811D07BCF600B49E5B /* TargetViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetViewCell.m; sourceTree = "<group>"; };
+		F01D34831D07BD0A00B49E5B /* TargetViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TargetViewCell.xib; sourceTree = "<group>"; };
+		F01D348A1D07F1B700B49E5B /* TargetAddController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetAddController.h; sourceTree = "<group>"; };
+		F01D348B1D07F1B700B49E5B /* TargetAddController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetAddController.m; sourceTree = "<group>"; };
+		F01D348F1D07F44500B49E5B /* JDTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTextField.h; sourceTree = "<group>"; };
+		F01D34901D07F44500B49E5B /* JDTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTextField.m; sourceTree = "<group>"; };
+		F01D34911D07F44500B49E5B /* JDTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTextView.h; sourceTree = "<group>"; };
+		F01D34921D07F44500B49E5B /* JDTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTextView.m; sourceTree = "<group>"; };
 		F02B97DB1D0162C600D550FC /* DMTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTarget.h; sourceTree = "<group>"; };
 		F02B97DC1D0162C600D550FC /* DMTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMTarget.m; sourceTree = "<group>"; };
 		F02B97DE1D016A4200D550FC /* MBProgressHUD+string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+string.h"; sourceTree = "<group>"; };
@@ -201,6 +218,11 @@
 			children = (
 				F0067E181CFD968F0046B60D /* TargetViewController.h */,
 				F0067E191CFD968F0046B60D /* TargetViewController.m */,
+				F01D34801D07BCF600B49E5B /* TargetViewCell.h */,
+				F01D34811D07BCF600B49E5B /* TargetViewCell.m */,
+				F01D34831D07BD0A00B49E5B /* TargetViewCell.xib */,
+				F01D348A1D07F1B700B49E5B /* TargetAddController.h */,
+				F01D348B1D07F1B700B49E5B /* TargetAddController.m */,
 			);
 			path = TargetVC;
 			sourceTree = "<group>";
@@ -222,6 +244,12 @@
 				F0364ABE1D0150B4000D98E1 /* DMShowContentView.m */,
 				F02B97DE1D016A4200D550FC /* MBProgressHUD+string.h */,
 				F02B97DF1D016A4200D550FC /* MBProgressHUD+string.m */,
+				F01D347D1D07B63E00B49E5B /* NSDate+Dream.h */,
+				F01D347E1D07B63E00B49E5B /* NSDate+Dream.m */,
+				F01D348F1D07F44500B49E5B /* JDTextField.h */,
+				F01D34901D07F44500B49E5B /* JDTextField.m */,
+				F01D34911D07F44500B49E5B /* JDTextView.h */,
+				F01D34921D07F44500B49E5B /* JDTextView.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -314,6 +342,7 @@
 				F0067DFF1CFD92130046B60D /* Assets.xcassets in Resources */,
 				F0AC7C811CFED6EB00A4593A /* ShowDatePickView.xib in Resources */,
 				F0067DFD1CFD92130046B60D /* Main.storyboard in Resources */,
+				F01D34841D07BD0A00B49E5B /* TargetViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +405,12 @@
 				F0CAE6421D003C60009D60A3 /* DMColorManager.m in Sources */,
 				F0CAE63F1D003733009D60A3 /* LifeYearView.m in Sources */,
 				F0AC7C871CFEDEFB00A4593A /* TabController.m in Sources */,
+				F01D347F1D07B63E00B49E5B /* NSDate+Dream.m in Sources */,
+				F01D34941D07F44500B49E5B /* JDTextView.m in Sources */,
+				F01D34821D07BCF600B49E5B /* TargetViewCell.m in Sources */,
+				F01D348D1D07F1B700B49E5B /* TargetAddController.m in Sources */,
 				F0067E1A1CFD968F0046B60D /* TargetViewController.m in Sources */,
+				F01D34931D07F44500B49E5B /* JDTextField.m in Sources */,
 				F0652B361CFFDB93004FC47F /* DMModel.m in Sources */,
 				F02B97E01D016A4200D550FC /* MBProgressHUD+string.m in Sources */,
 				F0067E111CFD93AC0046B60D /* BaseViewController.m in Sources */,

@@ -14,6 +14,7 @@
 #import "Masonry.h"
 #import "ViewInfoMacro.h"
 #import "DateTools.h"
+#import "NSDate+Dream.h"
 #import "UIViewAdditions.h"
 #import "FMDBManager.h"
 #import "AppDelegate.h"
@@ -22,6 +23,9 @@
 #import "PopoverView.h"
 #import "DMShowContentView.h"
 #import "MBProgressHUD.h"
+
+#import "JDTextView.h"
+#import "JDTextField.h"
 
 #import <PDTSimpleCalendar/PDTSimpleCalendar.h>
 

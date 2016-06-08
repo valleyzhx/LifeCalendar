@@ -15,6 +15,6 @@
 
 +(NSArray*)getModelArrayFromDB;
 
-
++(NSArray*)getModelArrayFromDBWithCondition:(NSString*)condition;
 
 @end
