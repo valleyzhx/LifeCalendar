@@ -37,6 +37,7 @@
 		F0CAE63F1D003733009D60A3 /* LifeYearView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CAE63E1D003733009D60A3 /* LifeYearView.m */; };
 		F0CAE6421D003C60009D60A3 /* DMColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CAE6411D003C60009D60A3 /* DMColorManager.m */; };
 		F0CAE6481D00414C009D60A3 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CAE6451D00414C009D60A3 /* PopoverView.m */; };
+		F0CB8EEC1D3E885300D595A9 /* GGNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8EEB1D3E885300D595A9 /* GGNavigationBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,8 @@
 		F0CAE6451D00414C009D60A3 /* PopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverView.m; sourceTree = "<group>"; };
 		F0CAE6461D00414C009D60A3 /* PopoverView_Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView_Configuration.h; sourceTree = "<group>"; };
 		F0CAE6471D00414C009D60A3 /* PopoverViewCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverViewCompatibility.h; sourceTree = "<group>"; };
+		F0CB8EEA1D3E885300D595A9 /* GGNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGNavigationBar.h; sourceTree = "<group>"; };
+		F0CB8EEB1D3E885300D595A9 /* GGNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGNavigationBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,8 @@
 				F0067DF31CFD92120046B60D /* AppDelegate.m */,
 				F0067E0F1CFD93AC0046B60D /* BaseViewController.h */,
 				F0067E101CFD93AC0046B60D /* BaseViewController.m */,
+				F0CB8EEA1D3E885300D595A9 /* GGNavigationBar.h */,
+				F0CB8EEB1D3E885300D595A9 /* GGNavigationBar.m */,
 				F0AC7C851CFEDEFB00A4593A /* TabController.h */,
 				F0AC7C861CFEDEFB00A4593A /* TabController.m */,
 				F0067DFB1CFD92130046B60D /* Main.storyboard */,
@@ -413,6 +418,7 @@
 				F01D34931D07F44500B49E5B /* JDTextField.m in Sources */,
 				F0652B361CFFDB93004FC47F /* DMModel.m in Sources */,
 				F02B97E01D016A4200D550FC /* MBProgressHUD+string.m in Sources */,
+				F0CB8EEC1D3E885300D595A9 /* GGNavigationBar.m in Sources */,
 				F0067E111CFD93AC0046B60D /* BaseViewController.m in Sources */,
 				F0652B391CFFFCEF004FC47F /* UserSetting.m in Sources */,
 				F0652B2C1CFFD687004FC47F /* LifeView.m in Sources */,

@@ -10,6 +10,8 @@
 #import "DMTarget.h"
 #import "TargetViewCell.h"
 
+#import "TargetAddController.h"
+
 @implementation TargetViewController{
     NSMutableArray *_dataArr;
 }
@@ -18,6 +20,18 @@
     self.showTable = YES;
     [super viewDidLoad];
     
+    UIView *footer = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 50)];
+    self.tableView.tableFooterView = footer;
+    UIButton *addBtn = [[UIButton alloc]init];
+    addBtn.backgroundColor = Nav_Color;
+    [self.view addSubview:addBtn];
+    [addBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.bottom.mas_equalTo(-5);
+        make.width.height.mas_equalTo(40);
+    }];
+    
+    [addBtn addTarget:self action:@selector(addTargetModelAction:) forControlEvents:UIControlEventTouchUpInside];
 
     [self reLoadListData];
     
@@ -79,8 +93,14 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
-
-
+#pragma mark- action
+-(void)addTargetModelAction:(UIButton*)btn{
+    TargetAddController *vc = [[TargetAddController alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 @end

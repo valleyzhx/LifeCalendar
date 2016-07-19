@@ -24,6 +24,7 @@
 
 
 -(void)viewDidLoad{
+    self.navType = GGNavigationBarTypeCustom;
     [super viewDidLoad];
     _userSetting = [UserSetting sharedUserSetting];
     [self reloadUI];
@@ -67,7 +68,8 @@
         _lifeView = [LifeView lifeView];
         [self.view addSubview:_lifeView];
         [_lifeView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(self.view);
+            make.top.equalTo(_naviBar.mas_bottom);
+            make.left.right.bottom.equalTo(self.view);
         }];
     }
     [_lifeView reloadView];

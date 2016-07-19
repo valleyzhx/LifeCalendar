@@ -7,6 +7,7 @@
 //
 
 #import "TargetAddController.h"
+
 #define orgX 40
 
 @interface TargetAddController () <UITextFieldDelegate,UITextViewDelegate>
@@ -18,8 +19,10 @@
 }
 
 - (void)viewDidLoad {
+    self.showTable = YES;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,7 +31,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;//名字，到期日，提醒，备注
+    return 4;//名字，到期日，提醒，备注
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

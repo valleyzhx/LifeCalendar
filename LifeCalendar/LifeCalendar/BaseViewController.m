@@ -15,7 +15,7 @@
     self.view.backgroundColor = viewBGColor;
     
     if (_showTable) {
-        _tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
+        _tableView = [[UITableView alloc]init];
         _tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
         _tableView.dataSource = self;
         _tableView.delegate = self;
@@ -28,7 +28,41 @@
         
         [self.view addSubview:_tableView];
     }
+    _naviBar = [self setUpNaviViewWithType:_navType];
     
+    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_naviBar.mas_bottom);
+        make.left.right.bottom.equalTo(self.view);
+    }];
+}
+
+-(GGNavigationBar *)setUpNaviViewWithType:(GGNavigationBarType)type{
+    if (_naviBar) {
+        [_naviBar removeFromSuperview];
+        _naviBar = nil;
+    }
+    if (type == GGNavigationBarTypeNone) {
+        return nil;
+    }
+    
+    GGNavigationBar *view = [[GGNavigationBar alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
+    view.title = self.title;
+    view.backgroundView.backgroundColor = Nav_Color;
+    view.backgroundView.alpha = 1;
+    
+    if (type == GGNavigationBarTypeNormal) {
+        UIButton *backBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
+        [backBtn setImage:[UIImage imageNamed:@"backIcon"] forState:UIControlStateNormal];
+        [backBtn addTarget:self action:@selector(clickedBackAction:) forControlEvents:UIControlEventTouchUpInside];
+        view.leftView = backBtn;
+    }
+    
+    [self.view addSubview:view];
+    return view;
+}
+
+-(void)clickedBackAction:(UIButton*)btn{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 

@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GGNavigationBar.h"
 
-@interface BaseViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 
+@interface BaseViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>{
+    GGNavigationBar *_naviBar;
+
+}
+
+@property (nonatomic,assign) GGNavigationBarType navType;
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,assign) BOOL showTable;
 

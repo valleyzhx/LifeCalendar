@@ -40,7 +40,7 @@
     NSTimeInterval today = [[self getToday]timeIntervalSince1970];
     double result = (timestamp-today)/(24*3600);
     if (result<-2) {
-        return [NSString stringWithFormat:@"%d天前",(int)ceil(ABS(result))];
+        return [NSString stringWithFormat:@"%d天前",(int)ceil(ABS(result))-1];
         
     }else if (result<-1){
         return @"前天";
@@ -54,7 +54,7 @@
         return @"后天";
     }
     else{
-        return [NSString stringWithFormat:@"%d天后",(int)ceil(ABS(result))];
+        return [NSString stringWithFormat:@"%d天后",(int)ceil(ABS(result))-1];
     }
 }
 
