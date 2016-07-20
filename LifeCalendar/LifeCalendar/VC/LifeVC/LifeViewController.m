@@ -19,7 +19,6 @@
 @implementation LifeViewController{
     UIButton *_addBirthBtn;
     LifeView *_lifeView;
-    UserSetting *_userSetting;
 }
 
 
