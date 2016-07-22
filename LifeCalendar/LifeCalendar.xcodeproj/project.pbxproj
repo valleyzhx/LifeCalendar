@@ -36,6 +36,7 @@
 		F0AC7C7F1CFED28100A4593A /* ShowDatePickView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AC7C7E1CFED28100A4593A /* ShowDatePickView.m */; };
 		F0AC7C811CFED6EB00A4593A /* ShowDatePickView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0AC7C801CFED6EB00A4593A /* ShowDatePickView.xib */; };
 		F0AC7C871CFEDEFB00A4593A /* TabController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AC7C861CFEDEFB00A4593A /* TabController.m */; };
+		F0C4A2A71D41BE3A00686513 /* UserCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C4A2A61D41BE3A00686513 /* UserCenterVC.m */; };
 		F0CAE63F1D003733009D60A3 /* LifeYearView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CAE63E1D003733009D60A3 /* LifeYearView.m */; };
 		F0CB8EEC1D3E885300D595A9 /* GGNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8EEB1D3E885300D595A9 /* GGNavigationBar.m */; };
 /* End PBXBuildFile section */
@@ -100,6 +101,8 @@
 		F0AC7C801CFED6EB00A4593A /* ShowDatePickView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowDatePickView.xib; sourceTree = "<group>"; };
 		F0AC7C851CFEDEFB00A4593A /* TabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabController.h; sourceTree = "<group>"; };
 		F0AC7C861CFEDEFB00A4593A /* TabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabController.m; sourceTree = "<group>"; };
+		F0C4A2A51D41BE3A00686513 /* UserCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterVC.h; sourceTree = "<group>"; };
+		F0C4A2A61D41BE3A00686513 /* UserCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterVC.m; sourceTree = "<group>"; };
 		F0CAE63D1D003733009D60A3 /* LifeYearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeYearView.h; sourceTree = "<group>"; };
 		F0CAE63E1D003733009D60A3 /* LifeYearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeYearView.m; sourceTree = "<group>"; };
 		F0CB8EEA1D3E885300D595A9 /* GGNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGNavigationBar.h; sourceTree = "<group>"; };
@@ -229,6 +232,8 @@
 		F00F43791D3F491100D58ACD /* UserVC */ = {
 			isa = PBXGroup;
 			children = (
+				F0C4A2A51D41BE3A00686513 /* UserCenterVC.h */,
+				F0C4A2A61D41BE3A00686513 /* UserCenterVC.m */,
 			);
 			path = UserVC;
 			sourceTree = "<group>";
@@ -432,6 +437,7 @@
 				F0CB8EEC1D3E885300D595A9 /* GGNavigationBar.m in Sources */,
 				F0067E111CFD93AC0046B60D /* BaseViewController.m in Sources */,
 				F0652B391CFFFCEF004FC47F /* UserSetting.m in Sources */,
+				F0C4A2A71D41BE3A00686513 /* UserCenterVC.m in Sources */,
 				F0652B2C1CFFD687004FC47F /* LifeView.m in Sources */,
 				F02B97DD1D0162C600D550FC /* DMTarget.m in Sources */,
 				F0067DF41CFD92130046B60D /* AppDelegate.m in Sources */,
