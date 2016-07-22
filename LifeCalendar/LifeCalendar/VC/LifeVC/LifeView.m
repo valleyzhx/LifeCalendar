@@ -36,8 +36,7 @@
         _scrollView.delegate = self;
         [self addSubview:_scrollView];
         [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.right.bottom.equalTo(self);
-            make.top.mas_equalTo(20);
+            make.edges.equalTo(self);
         }];
         _scrollView.showsVerticalScrollIndicator = NO;
     }

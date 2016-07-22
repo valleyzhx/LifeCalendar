@@ -22,10 +22,13 @@
 }
 
 +(id)viewWithFinishBlock:(void (^)(NSDate *))complishBlock{
+    return [self viewWithDateType:UIDatePickerModeDate finishBlock:complishBlock];
+}
++(id)viewWithDateType:(UIDatePickerMode)mode finishBlock:(void(^)(NSDate* date))complishBlock{
     ShowDatePickView *view = [[[NSBundle mainBundle]loadNibNamed:@"ShowDatePickView" owner:self options:nil]firstObject];
     view.myblock = complishBlock;
-    view.datePicker.datePickerMode = UIDatePickerModeDate;
-    view.datePicker.date = [NSDate dateWithTimeIntervalSince1970:946656000];//2000-1-1
+    view.datePicker.datePickerMode = mode;
+//    view.datePicker.date = [NSDate dateWithTimeIntervalSince1970:946656000];//2000-1-1
     return view;
 }
 

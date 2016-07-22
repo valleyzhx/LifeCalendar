@@ -7,7 +7,17 @@
 //
 
 #import "BaseViewController.h"
+#import "DMTarget.h"
+
+
+@protocol TargetAddControllerDelegate <NSObject>
+
+-(void)targetAddDone;
+
+@end
 
 @interface TargetAddController : BaseViewController
 
+@property (nonatomic,copy)DMTarget *targetModel;
+@property (nonatomic,assign) id <TargetAddControllerDelegate> delegate;
 @end

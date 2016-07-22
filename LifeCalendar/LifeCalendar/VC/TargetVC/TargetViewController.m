@@ -12,12 +12,17 @@
 
 #import "TargetAddController.h"
 
+@interface TargetViewController ()<TargetAddControllerDelegate>
+
+@end
+
 @implementation TargetViewController{
     NSMutableArray *_dataArr;
 }
 
 -(void)viewDidLoad{
     self.showTable = YES;
+    self.navType = GGNavigationBarTypeCustom;
     [super viewDidLoad];
     
     UIView *footer = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 50)];
@@ -44,14 +49,8 @@
     
     
     NSTimeInterval time = [[NSDate getToday]timeIntervalSince1970];
-    NSMutableArray *allArr = [NSMutableArray array];
-    for (int i=0; i<10; i++) {
-        DMTarget *target = [[DMTarget alloc]init];
-        target.timeStamp = time + (i-5)*(3600*24);
-        target.content = @"于是他默默追逐着，横渡海峡，年轻的人，看着他们，为了彼岸，骄傲的，骄傲的灭亡~";
-        [allArr addObject:target];
-    }
-    
+    NSArray *allArr = [DMTarget getModelArrayFromDB];
+
     for (DMTarget *model in allArr) {
         if (model.timeStamp < time) {
             [firstArr addObject:model];
@@ -59,7 +58,8 @@
             [secondArr addObject:model];
         }
     }
-    
+    [_dataArr removeAllObjects];
+    _dataArr = nil;
    _dataArr =[NSMutableArray arrayWithArray:@[firstArr,secondArr]];
     [self.tableView reloadData];
 }
@@ -88,19 +88,31 @@
     }
     DMTarget *model = _dataArr[indexPath.section][indexPath.row];
     
-    cell.titleLab.text = model.content;
+    cell.titleLab.text = model.title;
     cell.daysLab.text = [NSDate getDaysDescriptionFromToday:model.timeStamp];
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    DMTarget *model = _dataArr[indexPath.section][indexPath.row];
+    TargetAddController *vc = [[TargetAddController alloc]init];
+    vc.delegate = self;
+    vc.targetModel = model;
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 #pragma mark- action
 -(void)addTargetModelAction:(UIButton*)btn{
     TargetAddController *vc = [[TargetAddController alloc]init];
+    vc.delegate = self;
     [self presentViewController:vc animated:YES completion:nil];
+}
+
+
+#pragma mark- TargetAddControllerDelegate
+-(void)targetAddDone{
+    [self reLoadListData];
 }
 
 @end

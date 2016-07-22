@@ -41,6 +41,7 @@
 #define DispatchDelay(second,block) dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(second * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{block});
 
 
+#define WS() __typeof__(self) __weak weakself = self
 
 
 

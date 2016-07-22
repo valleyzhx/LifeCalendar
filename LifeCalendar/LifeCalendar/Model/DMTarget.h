@@ -10,12 +10,13 @@
 
 @interface DMTarget : DMModel
 
-@property (nonatomic, strong) NSString *content;
+@property (nonatomic, strong) NSString *title;
 
 @property (nonatomic, strong) NSString *note;
 
 @property (nonatomic, assign) double timeStamp;
 
-@property (nonatomic, assign) double fireStamp;
+@property (nonatomic, strong) NSString *fireTimeStr;
+
 
 @end

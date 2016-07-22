@@ -20,4 +20,9 @@
 @property (nonatomic,assign) BOOL showTable;
 
 
+-(void)showHudView;
+-(void)hideHudView;
+
+-(void)showMessage:(NSString*)message;
+
 @end

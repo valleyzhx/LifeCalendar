@@ -12,6 +12,7 @@
 
 
 +(id)viewWithFinishBlock:(void(^)(NSDate* date))complishBlock;
++(id)viewWithDateType:(UIDatePickerMode)mode finishBlock:(void(^)(NSDate* date))complishBlock;
 
 
 -(void)showInView:(UIView*)view;

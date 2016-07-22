@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "MBProgressHUD+string.h"
 
 @implementation BaseViewController
 
@@ -74,7 +75,9 @@
 -(void)hideHudView{
     [MBProgressHUD hideHUDForView:self.view animated:YES];
 }
-
+-(void)showMessage:(NSString *)message{
+    [MBProgressHUD showString:message inView:self.view];
+}
 
 #pragma mark- UITableView
 
