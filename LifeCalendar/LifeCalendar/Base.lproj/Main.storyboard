@@ -131,7 +131,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m5W-6R-UjI" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Third" id="peG-Db-i6I"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DqL-u7-ocB">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="DqL-u7-ocB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
